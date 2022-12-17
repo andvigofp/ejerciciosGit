@@ -47,6 +47,11 @@ repo.
 
 ![Creación de Priyecto](./img/11.png)
 
-11. crear el proyecto directamente en el directorio donde ya está el repo
+11. Crear el proyecto directamente en el directorio donde ya está el repo
 
 ![Creación de Priyecto](./img/12.png)
+
+12. Subiendo la rama2 y sus commit correspondiente
+
+![Creación de Priyecto](./img/13.png)
+![Creación de Priyecto](./img/14.png)
