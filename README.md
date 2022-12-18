@@ -51,3 +51,10 @@ repo.
  git add .
  git commit -m "moviendo el proyecto a la carpeta raiz del repo"
  ```
+
+- Nos queda subir a remoto
+
+```bash
+ git remote add origin https://github.com/andvigofp/ejerciciosGit.git
+ git push -u origin master
+ ```
