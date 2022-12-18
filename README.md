@@ -286,7 +286,7 @@
 			```
 		
 		- Lo ultmo nos queda subir la rama correspondiente a remoto
-			![carpetas iniciales](img/36.png)
+			![carpetas iniciales](img/37.png)
 			
 			```bash
 			git commit "push --set-upstream origin feat_inmutable_fields o git push -u origin feat_inmutable_fields"
@@ -303,7 +303,7 @@
 			
 		2. Segundo paso
 		- Editamos **Main.java** "para mostar una prueba de error" y lo comiteamos **diseñamos la prueba que muestra el error**
-			![carpetas iniciales](img/39.png
+			![carpetas iniciales](img/39.png)
 			
 			```bash
 			git status
@@ -312,9 +312,9 @@
 			```
 		3. Tercer paso
 			- Editamos **Main.java** y **Empleado.java** lo commiteamos **information hidding: edad es solo modificable a través de un setter** 
-				![carpetas iniciales](img/40.png
+				![carpetas iniciales](img/40.png)
 				
-				![carpetas iniciales](img/41.png
+				![carpetas iniciales](img/41.png)
 				
 				```bash
 				git status
@@ -324,7 +324,7 @@
 				
 		4. Cuarto paso
 			- Editamos **Main.java** y **Empleado.java** lo commiteamos **reuelto**
-				![carpetas iniciales](img/42.png
+				![carpetas iniciales](img/42.png)
 					
 				```bash
 				git status
@@ -333,7 +333,7 @@
 				```
 				
 			- Último lo puseamos para subirlo a remoto
-				![carpetas iniciales](img/43.png
+				![carpetas iniciales](img/43.png)
 				
 				```bash
 				git push --set-upstream origin bug_edad_negativa
@@ -344,7 +344,7 @@
 			- Nos cambiamos a la rama master
 			- Hacemos un merge **feat_inmutable_fields**
 			- Último lo puseamos 
-				![carpetas iniciales](img/44.png
+				![carpetas iniciales](img/44.png)
 			
 				```bash
 				git checkout master
@@ -353,7 +353,7 @@
 				```
 		2. Segundo paso
 			- Hacemos un merge **bug_edad_negativa**
-				![carpetas iniciales](img/45.png
+				![carpetas iniciales](img/45.png)
 				
 				```bash
 				git merge bug_edad_negativa
@@ -361,7 +361,7 @@
 		3. Tercer paso
 			- Comprobamos que tenemos un conficto al hacer merge, nos toca solucionarlo
 			- Editamos **Main.java** y **Empleado.java**, lo comiteamos **Merge branch 'bug_edad_negativa'**, estaría solucionado el problema
-				![carpetas iniciales](img/46.png
+				![carpetas iniciales](img/46.png)
 				
 				```bash
 				git status
@@ -370,13 +370,13 @@
 				```
 				
 			- Último lo puseamos para subirlo a remoto
-				![carpetas iniciales](img/47.png
+				![carpetas iniciales](img/47.png)
 				
 13. Realizamos otras mejoras en la rama feat_pojo para **mostar el problema**, **los campos son privados y se accede mediante getters**, y los mergeamos.
 	
 	1. Primer paso
 	- Creamos la rama **feat_pojo** y nos cambiamos a esta rama
-		![carpetas iniciales](img/48.png
+		![carpetas iniciales](img/48.png)
 		
 		```bash
 			git branch feat_pojo o git checkout -b feat_pojo
@@ -385,7 +385,7 @@
 	2. Segundo paso
 	- Modificamos **Main.java** y **Empleado.java**, para mostar el problema
 	- Lo comiteamos **mostrando el problema**
-		![carpetas iniciales](img/49.png
+		![carpetas iniciales](img/49.png)
 		
 		```bash
 			git status
@@ -395,7 +395,7 @@
 	3. Tercer Paso
 	- Modificamos **Main.java** y **Empleado.Java**, los campos ahora son privados y se acceden mediante getters
 	- Lo comiteamos **los campos son privados y se accede mediante getters**
-		![carpetas iniciales](img/50.png
+		![carpetas iniciales](img/50.png)
 		
 		```bash
 			git status
@@ -403,13 +403,13 @@
 			git commit -m "los campos son privados y se accede mediante getters"
 			```
 	- Lo puseamos para que lo suba a remoto
-		![carpetas iniciales](img/51.png
+		![carpetas iniciales](img/51.png)
 		
 		```bash
 			git push --set-upstream origin feat_pojo o git push -u origin feat_pojo
 			```
 	- ültimo nos cambiamos a la rama master, lo mergeamos y nos queda psusearlo
-		![carpetas iniciales](img/52.png
+		![carpetas iniciales](img/52.png)
 		
 		```bash
 			git checkout master
@@ -420,7 +420,7 @@
 		
 	1. Primer paso
 	- Crear la rama bug_deprecated_data_type
-		![carpetas iniciales](img/53.png
+		![carpetas iniciales](img/53.png)
 		
 		```bash
 			git branch bug_deprecated_data_type o git checkout -b bug_deprecated_data_type
@@ -438,7 +438,7 @@
 	
 	3. Tercer paso
 		- Modificamos **Main.java** Y **Empleado.Java**, lo comiteamos **migrado a LocalDate**
-			![carpetas iniciales](img/55.png
+			![carpetas iniciales](img/55.png)
 			
 			```bash
 			git status
@@ -447,14 +447,14 @@
 			```
 			
 		- Nos queda subirlo a remoto la rama correspondiente
-			![carpetas iniciales](img/56.png
+			![carpetas iniciales](img/56.png)
 			
 			```bash
 			git push --set-upstream origin bug_deprecated_data_type o git push -u origin bug_deprecated_data_type
 			```
 	4. Cuarto paso
 		- Nos cambiamos a la rama master, lo mergeamos y lo puseamos
-			![carpetas iniciales](img/57.png
+			![carpetas iniciales](img/57.png)
 			
 			```bash
 			git checkout master
