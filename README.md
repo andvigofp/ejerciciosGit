@@ -5,15 +5,7 @@ GiHub ofrece para Java.
 
 2. Modificación de este README.md desde GitHub para indicar lo dos primeros pasos.
 
-1. Primer commit
-
 ![Creación de Priyecto](./img/2.png)
-
- ```bash
- git status
- git add .
- git commit -m "Update README.md"
- ```
 
 3. Clonando el repositorio remoto
 
@@ -27,7 +19,7 @@ GiHub ofrece para Java.
 
 ![Creación de Priyecto](./img/4.png)
 
-2. Segundo commit 
+2. Primer commit 
 
 - Nos queda commitear **creando proyecto en intellij**
 
@@ -48,7 +40,7 @@ repo.
 
 ![Creación de Priyecto](./img/7.png)
 
-3. Tercer commit
+3. Segundo commit
 
 - Por último nos queda commitear **moviendo el proyecto a la carpeta raiz del repo**
 
