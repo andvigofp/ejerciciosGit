@@ -11,20 +11,30 @@ GiHub ofrece para Java.
 
 ![Creación de Priyecto](./img/3.png)
 
+ ```bash
+ git clone https://github.com/andvigofp/ejerciciosGit.git
+ ```
+
 4. Creo un proyecto en ese directorio con intellinj
 
 ![Creación de Priyecto](./img/4.png)
 
 5. Tercer commit 
 
-# creando un proyecto ejercioGit2
+- Nos queda commitear **creando proyecto en intellij**
 
 ![Creación de Priyecto](./img/5.png)
+
+```bash
+ git status
+ git add .
+ git commit -m "creando proyecto en intellij"
+ ```
 
 6. ¡Ups! el proyecto se creó en una subcarpeta. Muevo su contenido al directorio raiz del
 repo.
 
-# Movemos el contendio de la subcarpeta al contendido al directorio raiz
+- Movemos el contendio de la subcarpeta al contendido al directorio raiz
 
 ![Creación de Priyecto](./img/6.png)
 
@@ -32,6 +42,12 @@ repo.
 
 7. Cuarto commit
 
-# Moviendo el proyecto a la carpeta raiz del repo
+- Por último nos queda commitear
 
 ![Creación de Priyecto](./img/8.png)
+
+```bash
+ git status
+ git add .
+ git commit -m "moviendo el proyecto a la carpeta raiz del repo"
+ ```
