@@ -42,7 +42,7 @@ repo.
 
 7. Cuarto commit
 
-- Por último nos queda commitear
+- Por último nos queda commitear **moviendo el proyecto a la carpeta raiz del repo**
 
 ![Creación de Priyecto](./img/8.png)
 
