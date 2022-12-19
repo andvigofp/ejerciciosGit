@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39b2c266-c0f9-49d6-820e-5adccfa71039" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/CompareWithEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CompareWithEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/empresa/tutorial_java/paso_valor/paso_objetos/Clase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CompareWithEquals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/empresa/tutorial_java/equals/CompareWithEquals.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/empresa/tutorial_java/paso_valor/paso_objetos/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
