@@ -12,9 +12,7 @@
 3. Creamos un proyecto de IntelliJ en **Ordenador1** con repositorio de Git y código de ejemplo.
 	
     ![carpetas iniciales](img/2.png)
-	
-	
-	
+			
 4. Creamos un nuevo README.md localmente (no el presente con el registro de trabajo, que se añadirá al final sustituyendo a ese.)
    
    - Creamos el **README.md** desde el proyecto en intellinj
@@ -52,14 +50,15 @@
 	
 7. Creamos una nueva funcionalidad, para lo cual creamos una rama "feat_persona" y la desarrollamos (ver mi log de commits). Una vez lista subimos la rama (```git push feat_persona```). Después, nos movemos a master para hacer un merge de "feat_persona" **localmente**. Al no haber nuevos commits en master, el merge debería ser automático y sin conflictos. Después del merge, hacemos un push de master con los nuevos cambios añadidos.	
 	
-   1. Primer paso: 
+      1. Primer paso: 
    
    - creamos la rama "feat_persona"
 	
    ![carpetas iniciales](img/8.png)
 	
     ```bash
-    git branch feat_persona o git checkout -b feat_persona:  "te lo crea y cambia directamente a la rama "feat_persona""
+    git branch feat_persona  
+    git checkout -b feat_persona: "te lo crea y cambia directamente a la rama "feat_persona""
     git checkout feat_persona - cambia de rama "feat_persona"
     ```
 	
