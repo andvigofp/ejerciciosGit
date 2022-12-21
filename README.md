@@ -11,10 +11,10 @@ Grupo: DAM
 
 	![carpetas iniciales](img/1.png)
 
-	```bash
-	git status
-	git add .
-	git commit -m "proyecto base"
+	 ```bash
+    git status
+    git add .
+    git commit -m "proyecto base"
     ```
 
 3. Creamos y desarrollamos la rama valor_referencia.
@@ -23,30 +23,33 @@ Grupo: DAM
 
 	![carpetas iniciales](img/2.png)
 
-	```bash
-	git branch valor_referencia o git checkout -b valor_referencia
-	git checkout valor_referencia
+    ```bash
+    git branch valor_referencia - Te crea una rama  
+    git checkout -b valor_referencia - Otra forma de crear una rama, te cambia a la rama que creaste
+    git checkout valor_referencia - Para cambiar de rama
     ```
+       
+       
 	
 - Creamos el objecto Clase.java, lo desarrollamos y modificamos Main.java, por último lo comiteamos **probando paso por valor y referencia**
 	
 	 ![carpetas iniciales](img/3.png)
 	   
 	 ```bash
-	 git status
-	 git add .
-	 git commit -m "probando paso por valor y referencia"
-     ```
+    git status
+    git add .
+    git commit -m "probando paso por valor y referencia"
+    ```
 	 
 - Modifica objecto Clase y también modificamos Main.java, por último lo comiteamos **corregido y mejorado**	 
 	 
 	![carpetas iniciales](img/4.png)
 	 
-	  ```bash
-	 git status
-	 git add .
-	 git commit -m "corregido y mejorado"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "corregido y mejorado*"
+    ```
 
 4. Hacemos un push de la rama valor_referencia.
 
@@ -59,8 +62,8 @@ Grupo: DAM
 	![carpetas iniciales](img/5.png)
 	
 	 ```bash
-	 git checkout master
-	 git merge valor_referencia
+     git checkout master
+     git merge valor_referencia
      ```
 
 6. Creamos una rama paso_arrays y la desarrollamos.
@@ -69,20 +72,21 @@ Grupo: DAM
 
 	![carpetas iniciales](img/6.png)
 	
-	```bash
-	 git checkout master
-	 git merge valor_referencia
+     ```bash
+     git branch paso_arrays - Te crea una rama
+     git checkout -b paso_arrays - Otra forma de crear una rama, te cambia a la rama que creaste
+     git checkout paso_arrays - Para cambiar de rama
      ```
 	
 - Modificamos el Main.java y lo commiteamos **pasando arrays**
 
 	![carpetas iniciales](img/7.png)
 	
-	```bash
-	 git status
-	 git add .
-	 git commit -m "paso_arrays"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "pasando arrays"
+    ```
 		
 7. Hacemos un merge a master.
 
@@ -90,10 +94,10 @@ Grupo: DAM
 
 	![carpetas iniciales](img/8.png)
 	
-	```bash
-	 git checkout master
-	 git merge paso_arrays
-     ```
+	 ```bash
+    git checkout master
+    git merge paso_arrays
+    ```
 
 8. Creamos las ramas comparando_objetos y comparando_strings y las desarrollamos.
 
@@ -101,46 +105,48 @@ Grupo: DAM
 	
 	![carpetas iniciales](img/9.png)
 	
-	```bash
-	 git branch comparando_objetos o git checkout -b comparando_objetos
-	 git branch comparando_strings o git checkout -b comparando_strings
-     ```
+	 ```bash
+    git branch comparando_objetos - Te crea una rama
+    git checkout -b comparando_objetos - Otra forma de crear una rama, te cambia a la rama que creaste
+    git branch comparando_strings 
+    git checkout -b comparando_strings
+    ```
 	 	 
 - Nos cambiamos a la rama correspondiente **comparando_strings**
 
 	![carpetas iniciales](img/10.png)
 	
-	```bash
-	 git checkout comparando_strings
-     ```
+	` ```bash
+    git checkout comparando_strings
+    ```
 	
 - Creamos el objecto **compareWithEquals.Java** y lo desarrollamos
 
 	![carpetas iniciales](img/11.png)
 	
-	```bash
-	 git status
-	 git add .
-	 git commit -m "probando equals con strings"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "probando equals con strings"
+    ```
 	
 - Nos cambiamos a la rama **comparando_objetos**
 
 	![carpetas iniciales](img/12.png)
 		
-	```bash
-	 git checkout comparando_objetos
-     ```
+	 ```bash
+    git checkout comparando_objectos
+    ```
 
 - Creamos el objecto **compareWithEquals.Java** y lo desarrollamos
 
 	![carpetas iniciales](img/13.png)
 	
-	```bash
-	 git status
-	 git add .
-	 git commit -m "ejemplos de uso de equals con objetos"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "ejemplos de uso de equals con objetos"
+    ```
 
 9. Hacemos merge de ambas a master, solventando el conflicto.
 
@@ -149,29 +155,29 @@ Grupo: DAM
 
 	![carpetas iniciales](img/14.png)
 	
-	```bash
-	 git checkout master
-	 git merge comparando_strings
-     ```
+	 ```bash
+    git checkout master
+    git merge comparando_strings
+    ```
 	 
 - Ahora hacemos merge **comparando_objetos**, tenemos un conflicto
 - Porque comparando_strings y comparando_objetos, tienen el mismo archivo y diferente contendio
 
 	![carpetas iniciales](img/15.png)
 	
-	```bash
-	 git merge comparando_objetos
-     ```
+	 ```bash
+    git merge comparando_objetos
+    ```
 	 
 - Lo solucionamos cambiando el contenido y lo comiteamos **merge de comparando_strings solventando conflicto**
 
 	 ![carpetas iniciales](img/16.png)
 	 
 	 ```bash
-	 git status
-	 git add .
-	 git commit -m "merge de comparando_strings solventando conflicto"
-     ```
+    git status
+    git add .
+    git commit -m "Merge de comparando_strings solventando conflicto"
+    ```
 	 
 10. Creamos la rama "reestructurando" para reorganizar en paquetes. Una vez desarrollada hacemos merge a master
 (es recomendable ver el estado de los ficheros de este commit, más que el diff).
@@ -180,10 +186,11 @@ Grupo: DAM
 
 	![carpetas iniciales](img/17.png)
 	
-	```bash
-	 git branch reestructurando o git checkout -b reestructurando
-	 git checkout reestructurando
-     ```
+	 ```bash
+    git branch reestructurando - Te crea una rama
+    git checkout -b reestucturando - Otra forma de crear una rama, te cambia a la rama que creaste
+    git checkout reescturando
+    ```
 
 - Creamos los paquetes necesarios y creamos los objetos .java y el resto de archivos.java, lo metemos en su paquete correspondiente
 - Modificamos compareWithEquals.Java, Main.Java y lo cambiamos al nombre del objeto correspondiente **PasoObjetos**
@@ -191,20 +198,20 @@ Grupo: DAM
 	
 	![carpetas iniciales](img/18.png)
 	
-	```bash
-	 git status
-	 git add .
-	 git commit -m "aordenando en paquetes"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "ordenando en paquetes"
+    ```
 
 - Nos cambiamos a la rama master y lo mergeamos **reestructurando**
 
 	![carpetas iniciales](img/19.png)
 	
-	```bash
-	 git checkout master
-	 git merge reestructurando
-     ```
+	 ```bash
+    git checkout master
+    git merge reestructurando
+    ```
 	
 11. Realizamos una corrección menor en valor_referencia y la hacemos un merge a master.
 
@@ -213,45 +220,45 @@ Grupo: DAM
 
 	![carpetas iniciales](img/20.png)
 	
-		```bash
-	 git checkout valor_referencia
-	 git status
-	 git add .
-	 git commit -m "corrección menor: escape de comilla"
-     ```
-	 
-
+	 ```bash
+    git checkout valor_referencia	 
+    git status
+    git add .
+    git commit -m "correción menor: escape de comilla"
+    ```
+    
 - Nos cambiamos a la rama master y mergeamos **valor_referencia**
 	
 	![carpetas iniciales](img/21.png)
 	
-	```bash
-	 git checkout master
-	 git merge valor_referencia
-     ```
+	 ```bash
+    git checkout master
+    git merge valor_referencia
+    ```
+    
 - Nos dara un conflicto por objeto Clase.Java, lo que hacemos es añadirlo y commitearlo **Merge branch 'valor_referencia'**
 
 	![carpetas iniciales](img/22.png)
 	
-	```bash
-	 git status
-	 git add .
-	 git commit -m "Merge branch 'valor_referencia'"
-     ```
+	 ```bash
+    git status
+    git add .
+    git commit -m "Merge branch 'valor_referencia'"
+    ```
 	 
 - ültimos nos queda subir la rama master y todo su contenido
 
 	![carpetas iniciales](img/23.png)
 	
-	```bash
-	 git remote add origin https://github.com/andvigofp/ed-examen-git-1t.git
-	 git push -u origin master
-     ```
+	 ```bash
+    git remote add origin https://github.com/andvigofp/ed-examen-git-1t.git
+    git push -u origin master
+    ```
 
 - Subir todas las ramas a la vez y su contendio
 
 	![carpetas iniciales](img/24.png)
 
 	 ```bash
-	 git pull --all https://github.com/andvigofp/ed-examen-git-1t.git
-     ```
+    git pull --all https://github.com/andvigofp/ed-examen-git-1t.git
+    ```
