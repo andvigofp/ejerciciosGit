@@ -88,6 +88,7 @@
   ```
   
 6 . quinto commit
+
 - Eliminanms el directorio .out con **git rm -r out/**
 
 ![Creación de Priyecto](./img/12.png)
