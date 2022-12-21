@@ -62,7 +62,7 @@
     git checkout feat_persona - cambia de rama "feat_persona"
     ```
 	
-    2. Segundo paso
+      2. Segundo paso
     
     - Creamos el objeto **Persona.java** y editamos **Main.java**, lo ejecutamos
     - Segundo commit **probando un objeto Persona**	
@@ -83,7 +83,7 @@
     git push --set-upstream origin feat_persona o git push -u origin feat_persona
     ```
 	
-    3. Tercer paso
+      3. Tercer paso
     
     - Nos cambiamos a la rama **master**, hacemos un **merge** 
 	  
@@ -104,7 +104,7 @@
 	
 8. Volvemos a **Ordenador1**. Recordamos el estado de nuestro proyecto en este ordenador haciendo un ```git status``` y un ```git log```. Si no nos indica que el master local está por detrás del remoto (origin/master), será necesario hacer un ```git fetch```.
 	
-  1. primer paso
+    1. primer paso
   
   - Nos volvemos al directorio ordenador1
 	
@@ -126,7 +126,7 @@
 	
 10. Desarrollamos una nueva funcionalidad "feat_empleado" en su correspondiente rama.
 	
-  1. Primer paso
+    1. Primer paso
 	
    - Creamos la rama **feat_empleado** y nos cambiamos a rama **feat_empleado**
 	
@@ -137,16 +137,16 @@
    git checkout feat_empleado 
    ```
 	
-1. Durante el desarrollo, antes de hacer el primer commit en feat_empleado, detectamos que el fichero .idea/workspace.xml cambia automáticamente a menudo al abrir el proyecto en IntelliJ (es un archivo de metadatos de proyecto de IntelliJ).
+  1. Durante el desarrollo, antes de hacer el primer commit en feat_empleado, detectamos que el fichero .idea/workspace.xml cambia automáticamente a menudo al abrir el   proyecto en IntelliJ (es un archivo de metadatos de proyecto de IntelliJ).
 	
- 2. Segundo paso
+   2. Segundo paso
   
  - Editamos .gitignore y añadimos .idea/workspace - para que suba en remoto los cambios echos por cada cambio que hagamos
 		
  ![carpetas iniciales](img/15.png)
 		
 	
-2. Hacemos un primer commit para añadir ```.idea/workspace.xml``` al .gitignore. Además, como los ficheros de ese directorio ya se han añadido previamente al repositorio, tendremos que eliminarlos de él haciendo:
+  2. Hacemos un primer commit para añadir ```.idea/workspace.xml``` al .gitignore. Además, como los ficheros de ese directorio ya se han añadido previamente al        repositorio, tendremos que eliminarlos de él haciendo:
 		
  ![carpetas iniciales](img/16.png)
 		
@@ -154,7 +154,7 @@
   git rm --cached .idea/workspace.xml
   ```
 	
- 3. Tercer paso
+   3. Tercer paso
 
 - Nos queda añadir el commit **añadido workspace.xml a gitignore**
 	
@@ -166,9 +166,9 @@
   git commit -m "añadido workspace.xml a gitignore"
   ```
 	
-  3. Hacemos los otros 2 commits y pusheamos.
+    3. Hacemos los otros 2 commits y pusheamos.
 	
-   3. Tercer paso
+    4. Tercer paso
    
    - Creamos el objeto **Empleado.java** y editar el **Main.java**
    - Nos queda añadir el commit **probando objeto empleado**
@@ -200,7 +200,7 @@
    git push --set-upstream origin feat_empleado o git push -u origin feat_empleado
    ```
 		
-   4. Vemos todas las ramas que tenemos.
+     4. Vemos todas las ramas que tenemos.
 	
     ![carpetas iniciales](img/21.png)
 
@@ -210,7 +210,7 @@
 
  feat_persona solo debería estar en remoto, ya que es una rama que no se ha usado en este "ordenador".
 
-5. Hacemos un checkout a master para mergear. Al hacer el push detectamos que hay un conflicto. Hemos olvidado de descargarnos los cambios que habíamos hecho en el   otro ordenador y que tenemos subidos a GitHub.
+  5. Hacemos un checkout a master para mergear. Al hacer el push detectamos que hay un conflicto. Hemos olvidado de descargarnos los cambios que habíamos hecho en el     otro ordenador y que tenemos subidos a GitHub.
 		
 - Nos cambiamos a la rama master y hacemos un push "Nos da error porque no hicimos un pull para descargar los cambios en remoto a local, ahora tenemos conflicto con los nuevos cambios"
 
@@ -221,7 +221,7 @@
    git push
    ```
 		
-6. Podríamos hacer un pull, que implicaría un merge de la rama remota a la rama local, como ya hemos visto, pero para hacerlo bien, vamos a eliminar los nuevos commits de master (siguen en feat_empleado, así que no se pierden). Para ello, usamos un ```git reset --hard``` desde master, volviendo al último commit común al master remoto.
+  6. Podríamos hacer un pull, que implicaría un merge de la rama remota a la rama local, como ya hemos visto, pero para hacerlo bien, vamos a eliminar los nuevos  commits de master (siguen en feat_empleado, así que no se pierden). Para ello, usamos un ```git reset --hard``` desde master, volviendo al último commit común al  master remoto.
   
   ![carpetas iniciales](img/23.png)
 		
@@ -229,7 +229,7 @@
    git reset --hard
    ```
 
-  7. Ahora sí podemos hacer un pull de master sin conflicto.
+    7. Ahora sí podemos hacer un pull de master sin conflicto.
     
    ![carpetas iniciales](img/24.png)
 	
@@ -237,7 +237,7 @@
    git pull
    ```
    
- 8. Hacemos merge de la nueva rama local feat_empleado. Ahora sí tendremos conflicto.
+   8. Hacemos merge de la nueva rama local feat_empleado. Ahora sí tendremos conflicto.
 
   ![Git Merge meme](img/merge.gif)
 
@@ -302,11 +302,11 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
 		
 12. Ahora vamos a simular cómo se desarrollaría en paralelo en varias ramas (distintas personas). No crearemos carpetas que simulen ordenadores pero cada rama representará el trabajo independiente de cada componente del equipo de trabajo.
 
- 1. Creamos dos ramas desde master, que desarrollaremos sin hacer merge a master (simulando otro desarrollador trabajando en paralelo): 
+   1. Creamos dos ramas desde master, que desarrollaremos sin hacer merge a master (simulando otro desarrollador trabajando en paralelo): 
 		
-  1. Primer paso 
+   1. Primer paso 
    
-   - crear las dos ramas **feat_inmutable_fields** y **bug_edad_negativa**
+   a. crear las dos ramas **feat_inmutable_fields** y **bug_edad_negativa**
     
    ![carpetas iniciales](img/33.png)
 				
@@ -317,7 +317,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
        
 1. "feat_inmutable_fields" para evitar que se pueda cambiar el nombre y la fecha de contratación de un empleado (asumimos que las especificaciones del proyecto lo impiden, sea o no razonable).
 		
-  2. Segundo paso
+    2. Segundo paso
   
   - Cambiar de rama **feat_inmutable_fields**
 		
@@ -327,7 +327,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
    git checkout feat_inmutable_fields
    ```
 		
-  3. Tercer paso
+   3. Tercer paso
   
   - Ahora editamos Main.java "para evitar cambiar la fecha"
   - Añadimos el commit **diseñamos las pruebas de esta funcionalidad**
@@ -340,7 +340,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
    git commit "diseñamos las pruebas de esta funcionalidad"
    ```
 		
-  4. Cuarto paso
+   4. Cuarto paso
    
    - Editamos **Empleao.java** y **Main.java**
    - Añadimos el commit **ahora hay dos campos inmutables**
@@ -363,7 +363,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
      
   2. "bug_edad_negativa", para garantizar que la edad de un empleado no pueda ser negativa.
 		
-   1. Primer paso
+     1. Primer paso
    
    - nos cambiamos a la **bug_edad_negativa**
 	 
@@ -372,8 +372,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
   ```bash
   git checkout bug_edad_negativa
   ```
-	
-
+  
    2. Segundo paso
   
   - Editamos **Main.java** "para mostar una prueba de error" y lo comiteamos **diseñamos la prueba que muestra el error**
@@ -422,7 +421,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
  
 3. Una vez desarrolladas, hacemos el merge de ambas ramas a master solventando conflictos.
 		
- 1. Primer paso
+   1. Primer paso
  
  - Nos cambiamos a la rama master
  - Hacemos un merge **feat_inmutable_fields**
@@ -436,7 +435,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
  git push
  ```
  
- 2. Segundo paso
+   2. Segundo paso
  
  - Hacemos un merge **bug_edad_negativa**
   
@@ -445,7 +444,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
   ```bash
  git merge bug_edad_negativa
  ```
- 3. Tercer paso
+   3. Tercer paso
  
  - Comprobamos que tenemos un conficto al hacer merge, nos toca solucionarlo
  - Editamos **Main.java** y **Empleado.java**, lo comiteamos **Merge branch 'bug_edad_negativa'**, estaría solucionado el problema
@@ -468,7 +467,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
 				
 13. Realizamos otras mejoras en la rama feat_pojo para **mostar el problema**, **los campos son privados y se accede mediante getters**, y los mergeamos.
 	
- 1. Primer paso
+   1. Primer paso
  
  - Creamos la rama **feat_pojo** y nos cambiamos a esta rama
   
@@ -479,7 +478,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
   git checkout feat_pojo
   ```
    	
-  2. Segundo paso
+   2. Segundo paso
 	
   - Modificamos **Main.java** y **Empleado.java**, para mostar el problema
   - Lo comiteamos **mostrando el problema**
@@ -492,7 +491,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
   git commit -m "mostrando el problema"
   ```
   
- 3. Tercer Paso
+   3. Tercer Paso
  
  - Modificamos **Main.java** y **Empleado.Java**, los campos ahora son privados y se acceden mediante getters
  - Lo comiteamos **los campos son privados y se accede mediante getters**
@@ -524,7 +523,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
    ```
 14. Realizamos otras mejoras en la rama **bug_deprecated_data_type** para solucionar los problemas de la librería obsoleta java.util.Date, y los mergeamos.
 		
- 1. Primer paso
+   1. Primer paso
  
  - Crear la rama bug_deprecated_data_type
   
@@ -535,7 +534,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
   git checkout bug_deprecated_data_type
   ```
   
-  2. Segundo paso
+   2. Segundo paso
   
   - Modificamos **Main.java** y lo comiteamos **mostrando los problemas de Date** 
    
@@ -547,7 +546,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
    git commit -m "bug_deprecated_data_type"
    ```
 	
-  3. Tercer paso
+   3. Tercer paso
   
   - Modificamos **Main.java** Y **Empleado.Java**, lo comiteamos **migrado a LocalDate**
   
@@ -567,7 +566,7 @@ Solventamos los conflictos (en Main.java) y como realmente se está abordando la
    git push --set-upstream origin bug_deprecated_data_type o git push -u origin bug_deprecated_data_type
    ```
    
- 4. Cuarto paso
+   4. Cuarto paso
 
 - Nos cambiamos a la rama master, lo mergeamos y lo puseamos
   
